@@ -29,10 +29,14 @@ jwt = JWTManager(app)
 # Import routes after db initialization to avoid circular imports
 from routes.auth import auth_bp
 from routes.user import user_bp
+from routes.weight import weight_bp
+from routes.macros import macros_bp
 
 # Register blueprints
 app.register_blueprint(auth_bp, url_prefix='/api/auth')
 app.register_blueprint(user_bp, url_prefix='/api/users')
+app.register_blueprint(weight_bp, url_prefix='/api/weight')
+app.register_blueprint(macros_bp, url_prefix='/api/macros')
 
 if __name__ == '__main__':
     app.run(debug=True) 
