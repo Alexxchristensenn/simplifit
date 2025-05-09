@@ -58,4 +58,32 @@ coverage.xml
 .hypothesis/
 
 # Unit test / pytest
-.pytest_cache/ 
+.pytest_cache/
+
+# Node.js / React
+node_modules/
+/frontend/node_modules
+/frontend/build
+/frontend/dist
+/frontend/.env
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+
+# Build directories
+/backend/build
+/backend/dist
+
+# System Files
+Thumbs.db
+desktop.ini
+*.bak
+*.tmp
+*.temp
+
+# Local development
+*.local 
